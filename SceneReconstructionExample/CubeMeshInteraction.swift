@@ -48,7 +48,7 @@ struct CubeMeshInteraction: View {
             await model.processReconstructionUpdates()
         }
         .gesture(SpatialTapGesture().targetedToAnyEntity().onEnded { value in
-            let location3D = value.convert(value.location3D, from: .global, to: .scene)
+            let location3D = value.convert(value.location3D, from: .local, to: .scene)
             model.addCube(tapLocation: location3D)
         })
         .onChange(of: model.errorState) {
