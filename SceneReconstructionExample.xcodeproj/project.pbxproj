@@ -84,7 +84,7 @@
 				6B69B485B334FA16E70DE8F0 /* LICENSE.txt */,
 			);
 			name = LICENSE;
-			path = LICENSE;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

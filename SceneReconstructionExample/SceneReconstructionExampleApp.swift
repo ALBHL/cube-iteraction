@@ -14,6 +14,8 @@ import SwiftUI
 struct SceneReconstructionExampleApp: App {
     @State private var model = EntityModel()
     
+    @MainActor init() {}
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -30,4 +32,5 @@ struct SceneReconstructionExampleApp: App {
     }
 }
 
+@MainActor
 let logger = Logger(subsystem: "com.apple-samplecode.SceneReconstructionExample", category: "general")
