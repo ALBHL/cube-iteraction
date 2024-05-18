@@ -56,3 +56,4 @@ struct CubeMeshInteraction: View {
         }
     }
 }
+
